@@ -7,8 +7,9 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-find_package(ign_ros2_control REQUIRED)
-find_package(ros_gz REQUIRED)
+find_package(gz_ros2_control REQUIRED)
+find_package(ros_gz_sim REQUIRED)
+find_package(ros_gz_bridge REQUIRED)
 find_package(xacro REQUIRED)
 find_package(robotiq_description REQUIRED)
 # uncomment the following section in order to fill in

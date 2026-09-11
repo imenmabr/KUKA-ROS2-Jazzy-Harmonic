@@ -11,7 +11,9 @@
   <xacro:kuka_kr70_r2100_robot prefix="$(arg prefix)" robot_name="$(arg robot_name)" gripper_name="$(arg gripper_name)"/>
 
   <gazebo>
-    <plugin filename="ign_ros2_control-system" name="ign_ros2_control::IgnitionROS2ControlPlugin">
+    <plugin
+      filename="libgz_ros2_control-system.so"
+      name="gz_ros2_control::GazeboSimROS2ControlPlugin">
         <ros>
           <namespace>$(arg namespace)</namespace>
         </ros>
